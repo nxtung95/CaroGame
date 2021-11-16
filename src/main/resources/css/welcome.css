@@ -1,0 +1,13 @@
+@media all and (min-width: 900px){
+	#board-area {
+		width: 60%;
+		clear: none;
+	}
+	#container{
+		width: 80%;
+		max-width: 1500px;
+	}
+	.content-area{
+		margin: 10px;
+	}
+}
