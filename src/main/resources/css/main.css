@@ -53,25 +53,32 @@
 .btn1 {
 	font-weight: bold;
 	text-transform: uppercase;
-	background-color: #D4A475;
 	border: 2px solid #7F4F2A;
 	border-radius: 5px;
 	color: #5C392A;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	cursor: pointer;
 }
+.btn1:hover {
+	background-color: #7F4F2A;
+	color: white;
+}
+
+.btn1.active {
+	background-color: #7F4F2A;
+	color: white;
+	cursor: default;
+}
+
 .btn-med {
 	padding: 10px;
 }
-.tbox1{
-	margin-top: 2px;
-	margin-bottom: 2px;
-	border: 2px solid #BF9469;
-	border-radius: 5px;
-	background: #FFD2AA;
-	padding-left: 4px;
-}
-.info {
-	border: 2px solid #BF9469;
-	text-overflow: auto;
+
+#khoiTao {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
 }

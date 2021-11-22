@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Online Caro</title>
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/playing.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id = "container">
+	<div id = "board-area" class="content-area">
+		<div id="board-cpanel">
+			<h1 id="logo">CARO ONLINE</h1>
+			<button class="btn1 btn-med" id="newGame" onclick="board.khoiTaoBanCo()"><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i> Ván mới</button>
+			<button class="btn1 btn-med" id="coX" onclick="board.activeBtnQuanCo(this)" data-type="X">Lượt X</button>
+			<button class="btn1 btn-med" id="coO" onclick="board.activeBtnQuanCo(this)" data-type="O">Lượt O</button>
+			<button class="btn1 btn-med" id="quit" onclick="thoatGame()"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i> Thoát</button>
+
+		</div>
+		<div id="board">
+			Vui lòng kích hoạt javascript trên trình duyệt của bạn để tải trò chơi!
+		</div>
+	</div>
+
+</div>
+
+</body>
+<script type="text/javascript" src="../js/board.js"></script>
+<script type="text/javascript" src="../js/caro.js"></script>
+<script>
+	function thoatGame() {
+		location.href = "/";
+	}
+</script>
+</html>
